@@ -18,20 +18,7 @@ int HOUR, MINUT, SECOND;
 
 void setup()
 {
-  Wire.begin();
-  RTC.begin();
-  lcd.begin(16, 2);
-  pinMode(INC, INPUT);
-  pinMode(next, INPUT);
-  pinMode(set_mad, INPUT);
-  pinMode(buzzer, OUTPUT);
-  digitalWrite(next, HIGH);
-  digitalWrite(set_mad, HIGH);
-  digitalWrite(INC, HIGH);
-  digitalWrite(buzzer, LOW);
-  lcd.setCursor(0, 0);
-  lcd.print("ENGINEER THIS");
-  delay(2000);
+  
 
   if (!RTC.isrunning())
   {
